@@ -1,0 +1,15 @@
+
+<ui:composition 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="http://xmlns.jcp.org/jsf/core"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    
+	<div class="form" id="user">
+		<h:form>
+	    <h2>Welcome #{login.user}!</h2>
+		<h:commandLink action="#{login.logout}" value="Logout" styleClass="button" />
+		</h:form>
+	</div>
+	
+</ui:composition>
